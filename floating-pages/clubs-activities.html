@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Categories</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1a1a1a, #2d3436);
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #c1bbd5;
+      }
+      .category-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .category-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .category-card h2 {
+        font-size: 18px;
+        margin: 0;
+        color: #c1bbd5;
+      }
+      .club-list {
+        display: none;
+        margin-top: 10px;
+        text-align: left;
+      }
+      .club-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .club-list li {
+        padding: 5px 0;
+        font-size: 14px;
+        color: #c1bbd5;
+      }
+      .active {
+        display: block;
+      }
+      .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+      .close-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: rotate(90deg);
+      }
+    </style>
+    <script src="../js.js"></script>
+  </head>
+  <body>
+    <span class="close-btn">&times;</span>
+    <h1>Club Categories</h1>
+    <div class="category-container">
+      <!-- Health & Wellness -->
+      <div class="category-card" onclick="toggleList('health-wellness')">
+        <h2>Health & Wellness</h2>
+        <div class="club-list" id="health-wellness">
+          <ul>
+            <li>LIVIT - Health and Wellness Club</li>
+            <li>Kalki - Personal Development Club</li>
+            <li>Youth Empowerment and Skills Club (YES+!)</li>
+            <li>MAD - MAke A Difference Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Adventure & Sports -->
+      <div class="category-card" onclick="toggleList('adventure-sports')">
+        <h2>Adventure & Sports</h2>
+        <div class="club-list" id="adventure-sports">
+          <ul>
+            <li>Adventure Club</li>
+            <li>Sports Club</li>
+            <li>Dragon Fist Martial Arts Club</li>
+            <li>Quiz Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Arts & Creativity -->
+      <div class="category-card" onclick="toggleList('arts-creativity')">
+        <h2>Arts & Creativity</h2>
+        <div class="club-list" id="arts-creativity">
+          <ul>
+            <li>Open Community RUDRA</li>
+            <li>Dhwani - Theatre and Fine Arts Club</li>
+            <li>Sanskriti Club</li>
+            <li>Click n Flick Photography Club</li>
+            <li>OASIS VFX and CGI Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Music & Dance -->
+      <div class="category-card" onclick="toggleList('music-dance')">
+        <h2>Music & Dance</h2>
+        <div class="club-list" id="music-dance">
+          <ul>
+            <li>Music Club</li>
+            <li>Indian Classical Music Club</li>
+            <li>Nrityam</li>
+            <li>Western Music Club</li>
+            <li>Beat the Heat - Dance Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Technology & Innovation -->
+      <div class="category-card" onclick="toggleList('tech-innovation')">
+        <h2>Technology & Innovation</h2>
+        <div class="club-list" id="tech-innovation">
+          <ul>
+            <li>SPARK - The Electric Vehicle Club</li>
+            <li>Graphics Processing Unit Users Group (GPUG)</li>
+            <li>Android Club</li>
+            <li>Null Chapter - Security and Hacking</li>
+            <li>IoT Revolution Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social & Cultural -->
+      <div class="category-card" onclick="toggleList('social-cultural')">
+        <h2>Social & Cultural</h2>
+        <div class="club-list" id="social-cultural">
+          <ul>
+            <li>Clean Campus Club - Swacch VIT-AP</li>
+            <li>Mélange - Inspire, Attract and Trend Club</li>
+            <li>Think and Thrive Club</li>
+            <li>Women Innovators Network</li>
+            <li>Social Entrepreneurship Empowerment and Development Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Academic & Professional Development -->
+      <div class="category-card" onclick="toggleList('academic-professional')">
+        <h2>Academic & Professional</h2>
+        <div class="club-list" id="academic-professional">
+          <ul>
+            <li>Toast Masters Club</li>
+            <li>Book Club - Inculcate Art of Reading</li>
+            <li>VITonomics Club</li>
+            <li>Data Science Club</li>
+            <li>Entrepreneurship Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Regional & Cultural Associations -->
+      <div class="category-card" onclick="toggleList('regional-cultural')">
+        <h2>Regional & Cultural</h2>
+        <div class="club-list" id="regional-cultural">
+          <ul>
+            <li>Kannada Association</li>
+            <li>Malayalam Association</li>
+            <li>Odia Association</li>
+            <li>Bengali Association</li>
+            <li>Tamil Association</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function toggleList(id) {
+          const list = document.getElementById(id);
+          list.classList.toggle("active");
+        }
+
+        const categoryCards = document.querySelectorAll(".category-card");
+
+        categoryCards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const listId = card.querySelector(".club-list").id;
+            toggleList(listId);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
