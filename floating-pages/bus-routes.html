@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Route Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #575050;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #443e3e;
+        }
+        tr:hover {
+            background-color:  #792010;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span class="close-btn">&times </span>
+
+<h2>Vehicle Route Details</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Sl No</th>
+            <th>Vehicle Number</th>
+            <th>Starting Point</th>
+            <th>Existing Route No</th>
+            <th>Proposed Route</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>AP 07TH4145</td>
+            <td>Kankipadu</td>
+            <td>V V-1</td>
+            <td>V V-1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>AP07TH4152</td>
+            <td>Poranki Center</td>
+            <td>V V-2</td>
+            <td>V V-2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>AP39UN8159</td>
+            <td>Kamayatopu Center</td>
+            <td>VV-3</td>
+            <td>V V-3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>AP39UN8158</td>
+            <td>Time Hospital</td>
+            <td>VV-3A</td>
+            <td>V V-4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>AP39UN6602</td>
+            <td>Auto Nagar Gate</td>
+            <td>VV-4</td>
+            <td>V V-5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>AP39UN8157</td>
+            <td>Patamata E Seva</td>
+            <td>VV-5</td>
+            <td>V V-6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>AP39TC0951</td>
+            <td>Gannavaram Bus Stand</td>
+            <td>VV-6</td>
+            <td>V V-7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>AP39UN6604</td>
+            <td>Enikepadu</td>
+            <td>VV-6A</td>
+            <td>V V-8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>AP39UP1657</td>
+            <td>Ramavarapadu Ring</td>
+            <td>VV-7</td>
+            <td>V V-9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>AP07TH4161</td>
+            <td>Nunna Center</td>
+            <td>VV-8</td>
+            <td>V V-10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>AP07TH4148</td>
+            <td>Budameru Vantena</td>
+            <td>VV-9</td>
+            <td>V V-11</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>AP39TC0950</td>
+            <td>Sarada College</td>
+            <td>VV-10</td>
+            <td>V V-12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>AP07TH4151</td>
+            <td>ESI Hospital</td>
+            <td>VV-10A</td>
+            <td>V V-13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>AP07TM5937</td>
+            <td>Kondapalli (vtps colony)</td>
+            <td>VV-11</td>
+            <td>V V-14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>AP39UP1652</td>
+            <td>Guntupalli</td>
+            <td>VV-12</td>
+            <td>V V-15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>AP07TH4159</td>
+            <td>Bhavanipuram Sivalayam Center</td>
+            <td>VV-13</td>
+            <td>V V-16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>AP39UK0717</td>
+            <td>Swathi Center</td>
+            <td>VV-14</td>
+            <td>V V-17</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>AP07TH4157</td>
+            <td>Auto Nagar Association Hall</td>
+            <td>VV-15</td>
+            <td>V V-18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>AP39UP1654</td>
+            <td>Gurunank colony (Ushodaya Super Mart) -2</td>
+            <td>VV-15A</td>
+            <td>V V-19</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>AP39UP1653</td>
+            <td>Varadhi</td>
+            <td>VV-16</td>
+            <td>V V-20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>AP39UK0718</td>
+            <td>Tadepalli Petrol Pump</td>
+            <td>VV-16A</td>
+            <td>V V-21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>AP39UP4151</td>
+            <td>Tadepalli -Undavalli - Mandadam</td>
+            <td>VV-17</td>
+            <td>V V-22</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>AP07TM5936</td>
+            <td>Lodge Center</td>
+            <td>GV-1</td>
+            <td>G V-1</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>AP39UQ8913</td>
+            <td>Sai Baba Temple</td>
+            <td>GV-1A</td>
+            <td>G V-2</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>AP39UK0719</td>
+            <td>Hanumaiah Company</td>
+            <td>GV-2</td>
+            <td>G V-3</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>AP39UK3341</td>
+            <td>Baker's Fun Center</td>
+            <td>GV-2A</td>
+            <td>G V-4</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>AP39UJ8590</td>
+            <td>S V N Colony</td>
+            <td>GV-3</td>
+            <td>G V-5</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>AP07TM5900</td>
+            <td>Patabhipuram HP Petrol pump</td>
+            <td>GV-3A</td>
+            <td>G V-6</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>AP39UJ8592</td>
+            <td>Palakaluru</td>
+            <td>GV-4</td>
+            <td>G V-7</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>AP39UK0720</td>
+            <td>Vidhya Nagar</td>
+            <td>GV-5</td>
+            <td>G V-8</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>AP39UQ8914</td>
+            <td>Navabharath Nagar</td>
+            <td>GV-6</td>
+            <td>G V-9</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>AP39UK3331</td>
+            <td>Chillies</td>
+            <td>GV-6A</td>
+            <td>G V-10</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>AP07TH4146</td>
+            <td>Housing Board Colony</td>
+            <td>GV-7</td>
+            <td>G V-11</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>AP39UJ8594</td>
+            <td>Medikonduru</td>
+            <td>GV-8</td>
+            <td>G V-12</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>AP39TC0953</td>
+            <td>Nallacheruvu High Rd</td>
+            <td>GV-8A</td>
+            <td>G V-13</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>AP07TH4150</td>
+            <td>Chebrolu</td>
+            <td>GV-9</td>
+            <td>G V-14</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>AP39UJ8591</td>
+            <td>Lodge Center</td>
+            <td>GV-10</td>
+            <td>G V-15</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>AP39TC0954</td>
+            <td>Nagaralu</td>
+            <td>GV-10A</td>
+            <td>G V-16</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>AP07TM5938</td>
+            <td>Lam Farm</td>
+            <td>GV-11</td>
+            <td>G V-17</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>AP07TH4147</td>
+            <td>NRI</td>
+            <td>GV-12</td>
+            <td>G V-18</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>AP07TM5375</td>
+            <td>Vadlapudi Bridge</td>
+            <td>GV-12A</td>
+            <td>G V-19</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>AP07TH4154</td>
+            <td>Amaaravathi</td>
+            <td>GV-13</td>
+            <td>G V-20</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>AP39UN6596</td>
+            <td>RTP SPARE</td>
+            <td>RTP SPARE</td>
+            <td>G V-21</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>AP07TH4156</td>
+            <td>Tenali Bus Stand</td>
+            <td>TV-1</td>
+            <td>T V-1</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>AP07TH4158</td>
+            <td>Chenchupeta Govt Hospital</td>
+            <td>TV-2</td>
+            <td>T V-2</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>AP39UP4153</td>
+            <td>Chenchupeta Govt Hospital</td>
+            <td>TV-3</td>
+            <td>T V -3</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

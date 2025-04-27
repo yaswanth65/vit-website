@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Bundle JS (Includes Popper.js for Dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .navbar img {
+        height: 50px; /* Set a fixed height for the logo */
+        width: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensure the image fits within the dimensions */
+        position: relative; /* Adjust positioning */
+        margin-left: auto; /* Push the logo to the right */
+      }
+
+      @media (max-width: 768px) {
+        .navbar img {
+          height: 40px; /* Reduce logo size for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./page1.html">Beginners Compass</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Hot News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://chat2-1-7k12.onrender.com">Group Chat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chat-ai">Chat with our AI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gpa calculator.html">GPA Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attendance calculator.html"
+                >Attendance Calculator</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cgpa calculator.html"
+                >CGPA Calculator</a
+              >
+            </li>
+          </ul>
+          <img
+            src="./WhatsApp Image 2025-03-17 at 23.33.34_6e3b3594.jpg"
+            alt="Navbar Image"
+          />
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

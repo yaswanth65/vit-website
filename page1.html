@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginners Compass - Modern Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js.js" defer></script>
+  </head>
+  <body>
+    <script>
+      window.chtlConfig = { chatbotId: "8648936375" };
+    </script>
+    <script
+      async
+      data-id="8648936375"
+      id="chatling-embed-script"
+      type="text/javascript"
+      src="https://chatling.ai/js/embed.js"
+    ></script>
+    <div id="navbar-placeholder"></div>
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="welcome-text">
+          <h2>Welcome to Beginners Compass</h2>
+          <p>Your one-stop platform for university resources and updates</p>
+        </div>
+        <div class="sidebar-content">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="./floating-pages/academic-calendar.html"
+                class="quick-link"
+                >Academic Calendar</a
+              >
+            </li>
+            <li>
+              <a href="./cgpa calculator.html" class="quick-link"
+                >CGPA Calculator</a
+              >
+            </li>
+            <li>
+              <a
+                href="./floating-pages/faculty.html"
+                class="quick-link"
+                >Faculty Directory</a
+              >
+            </li>
+            <li>
+              <a href="./floating-pages/campus-map.html" class="quick-link"
+                >Campus Map</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="content-overlay"></div>
+        <div class="features">
+          <div class="feature-card">
+            <a href="./floating-pages/registration.html">
+              <h5>Registration Process</h5>
+              <p>Details about the university registration process.</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/hostel.html">
+              <h5>Hostel Registration & Rules</h5>
+              <p>Important guidelines and regulations for hostels.</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/bus-routes.html">
+              <h5>Bus Routes</h5>
+              <p>Information about campus transportation and bus routes.</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/hangout.html">
+              <h5>Hangout Places</h5>
+              <p>List of fun places to visit in Outing</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="">
+              <h5>Alumni Connect</h5>
+              <p>Connect With Alumni</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/clubs-activities.html">
+              <h5>Clubs & Activities</h5>
+              <p>
+                Details about student organizations and extracurricular
+                activities.
+              </p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/faculty.html">
+              <h5>Faculty</h5>
+              <p>Information on available Faculty</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/accomidation.html">
+              <h5>Nearby accommodation(PG,Hostels)</h5>
+              <p>PG's Recommendation</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./floating-pages/canteen.html">
+              <h5>Canteen & Food Services</h5>
+              <p>Details about campus food options and meal plans.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleList(id) {
+        const list = document.getElementById(id);
+        list.classList.toggle("active");
+      }
+
+      const categoryCards = document.querySelectorAll(".category-card");
+
+      categoryCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const listId = card.querySelector(".club-list").id;
+          toggleList(listId);
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
